@@ -39,11 +39,14 @@ BU_: XXX
 BO_ 597 NEW_MSG_1: 8 XXX
 
 BO_ 336 NEW_MSG_2: 8 XXX
+ SG_ Interesting1 : 55|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 32 NEW_MSG_3: 8 XXX
 
 BO_ 341 NEW_MSG_4: 8 XXX
+ SG_ suspension-z-something : 23|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 337 NEW_MSG_5: 8 XXX
- SG_ NEW_SIGNAL_1 : 31|16@0+ (1,0) [0|65535] "" XXX
- SG_ NEW_SIGNAL_2 : 47|16@0+ (1,0) [0|65535] "" XXX
+ SG_ engine-something : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 340 NEW_MSG_6: 8 XXX
