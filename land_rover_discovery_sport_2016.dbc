@@ -39,8 +39,8 @@ BU_: XXX
 BO_ 597 NEW_MSG_1: 8 XXX
 
 BO_ 336 NEW_MSG_2: 8 XXX
+ SG_ Speed-good : 29|11@0+ (1,0) [0|2047] "" XXX
  SG_ Interesting1 : 55|8@0+ (1,0) [0|255] "" XXX
- SG_ Speed1 : 29|11@0+ (1,0) [0|2047] "" XXX
 
 BO_ 32 NEW_MSG_3: 8 XXX
 
@@ -52,10 +52,9 @@ BO_ 340 NEW_MSG_6: 8 XXX
 
 BO_ 352 NEW_MSG_7: 8 XXX
  SG_ interesting4 : 7|13@0+ (1,0) [0|8191] "" XXX
- SG_ speed2 : 42|11@0+ (1,0) [0|2047] "" XXX
+ SG_ not speed : 42|11@0+ (1,0) [0|2047] "" XXX
 
 BO_ 1056 NEW_MSG_8: 8 XXX
  SG_ NEW_SIGNAL_1 : 55|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1044 NEW_MSG_9: 8 XXX
- SG_ engine-rpm : 50|11@0+ (1,0) [0|7000] "rpm" XXX
