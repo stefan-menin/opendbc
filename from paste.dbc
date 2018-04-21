@@ -1,0 +1,365 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: XXX
+
+
+BO_ 1044 engine_gear_2bus: 8 XXX
+ SG_ EngineRPM_2bus : 52|13@0+ (1,0) [0|7500] "rpm" XXX
+ SG_ gear_2bus : 8|3@1+ (1,0) [0|7] "" XXX
+
+BO_ 336 speed_brake_0bus2_gees: 8 XXX
+ SG_ brake_pressure_0bus : 41|10@0+ (1,0) [0|255] "" XXX
+ SG_ WheelSpeedFL_0bus : 29|14@0+ (1,0) [0|0] "mph" XXX
+ SG_ gees_maybe_2bus : 55|8@0+ (1,-128) [0|255] "" XXX
+
+BO_ 352 speed_trans_gear_0bus: 8 XXX
+ SG_ interesting4 : 7|8@0+ (1,0) [0|8191] "" XXX
+ SG_ torque_converter_slip : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ Averagedspeed2_0_160 : 44|13@0+ (1,0) [0|255] "" XXX
+ SG_ gear_requested : 56|4@1+ (1,0) [0|9] "" XXX
+ SG_ gear_engaged : 63|4@0+ (1,0) [0|255] "" XXX
+ SG_ transmission_input_shaft_speed : 28|13@0+ (1,0) [0|255] "rpm" XXX
+
+BO_ 341 2_155_Suspension: 8 XXX
+ SG_ 2_155_z_something : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 634 encoder1: 8 XXX
+ SG_ EncoderFLWheel : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ EncoderFrontLeftWheel : 55|8@0+ (1.411765,0) [0|255] "" XXX
+ SG_ EncoderFrontRightWheel : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ EncoderRearWheel : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 576 steering_torque: 8 XXX
+ SG_ steering_torque : 17|10@0+ (1,0) [0|127] "" XXX
+ SG_ steering_torque_magnitude : 49|10@0+ (1,0) [0|255] "" XXX
+
+BO_ 632 speed_engine_related: 8 XXX
+ SG_ engine_related : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ WheelSpeedLeft : 53|14@0+ (1,0) [0|255] "" XXX
+ SG_ WheelSpeedRight : 37|14@0+ (1,0) [0|255] "" XXX
+
+BO_ 368 speed_brake: 8 XXX
+ SG_ 0_170_speed : 37|14@0+ (1,0) [0|255] "" XXX
+ SG_ brake_pressure : 49|10@0+ (1,0) [0|255] "" XXX
+
+BO_ 432 NEW_MSG_2: 8 XXX
+ SG_ cycling : 51|4@0+ (1,0) [0|255] "" XXX
+
+BO_ 320 speed_gees: 8 XXX
+ SG_ gees_noisy_maybe : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ WheelSpeedFR : 29|14@0+ (1,0) [0|255] "" XXX
+ SG_ WheelSpeedFL : 52|13@0+ (1,0) [0|511] "" XXX
+
+BO_ 208 engine_rpm_brake: 8 XXX
+ SG_ engine_rpm : 36|13@0+ (1,0) [0|65535] "rpm" XXX
+ SG_ brake_pressed_lightly : 24|1@0+ (1,0) [0|255] "" XXX
+ SG_ brake_pressed_less_lightly : 25|1@1+ (1,0) [0|3] "" XXX
+
+BO_ 689 speed_DSC_HDC: 8 XXX
+ SG_ HILL_DESCENT_ON : 23|1@0+ (1,0) [0|3] "" XXX
+ SG_ DSC_on_off : 17|2@1+ (1,0) [0|3] "" XXX
+ SG_ VehicleSpeed1 : 45|14@0+ (1,0) [0|255] "" XXX
+
+BO_ 745 speed_yaw: 8 XXX
+ SG_ yaw : 8|9@0- (1,0) [0|0] "" XXX
+ SG_ WheelSpeedRR : 53|14@0+ (1,0) [0|255] "" XXX
+ SG_ WheelSpeedRL : 37|14@0+ (1,0) [0|255] "" XXX
+
+BO_ 597 something_interesting: 8 XXX
+ SG_ interesting_2 : 42|11@0+ (1,0) [0|255] "" XXX
+ SG_ interesting_1 : 26|11@0+ (1,0) [0|0] "" XXX
+
+BO_ 656 encoder_type: 8 XXX
+ SG_ encoder_times_2 : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ slow_encoder_odometer : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 32 speed_safety: 8 XXX
+ SG_ AEB_OFF : 8|1@1+ (1,0) [0|3] "" XXX
+ SG_ FWD_ALERT_TOGGLE_MAYBE : 11|1@0+ (1,0) [0|3] "" XXX
+ SG_ AEB_TOGGLE_MAYBE : 9|1@0+ (1,0) [0|3] "" XXX
+ SG_ speed1 : 28|13@0+ (1,0) [0|255] "" XXX
+ SG_ FORWARD_ALERT_OFF : 10|1@1+ (1,0) [0|7] "" XXX
+
+BO_ 80 encoder2: 8 XXX
+ SG_ EncoderFrontLeftWheel_0 : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ EncoderRRWheel_0 : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ EncoderRLWheel_0 : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ EncoderFrontRightWheel_0 : 31|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 408 steering_angle: 8 XXX
+ SG_ steering_angle : 38|15@0- (1,0) [0|0] "" XXX
+ SG_ steering_rate : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 464 brakes_other: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ brake_pressure : 25|10@0+ (1,0) [0|255] "" XXX
+
+BO_ 112 transmission_related: 8 XXX
+ SG_ transmission_related1 : 43|12@0+ (1,0) [0|255] "" XXX
+ SG_ rough_transmission_related : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 808 door_stalk_stuff: 8 XXX
+ SG_ DOOR_CLOSED_RL : 34|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_CLOSED_FL : 32|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_CLOSED_FR : 33|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_CLOSED_RR : 35|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_BLINKER_STALK : 21|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_BLINKER_STALK : 22|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_STALK_BUTTON_INCREMENTAL : 5|3@0+ (1,0) [0|7] "" XXX
+ SG_ LEFT_STALK_BUTTON : 2|1@1+ (1,0) [0|1] "" XXX
+
+BO_ 304 gas_pedal: 8 XXX
+ SG_ GAS_PEDAL2 : 55|8@0+ (0.390625,0) [0|100] "%" XXX
+ SG_ GAS_PEDAL3 : 63|8@0+ (0.390625,0) [0|100] "%" XXX
+ SG_ PEDAL_FLOORED : 35|1@0+ (1,0) [0|1] "" XXX
+ SG_ THROTTLE_SENT : 24|8@1+ (0.390625,0) [0|100] "%" XXX
+ SG_ rpm_related : 1|10@0+ (1,0) [0|255] "" XXX
+ SG_ GAS_PEDAL1_high : 33|10@0+ (0.390625,0) [0|100] "%" XXX
+
+BO_ 480 brake_1: 8 XXX
+ SG_ BRAKE_OFF : 17|1@1+ (1,0) [0|3] "" XXX
+
+BO_ 592 brake_other_2: 8 XXX
+ SG_ BRAKE_PRESSED : 48|1@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_1 : 16|9@0+ (1,0) [0|255] "" XXX
+
+BO_ 922 gear_steering_related: 8 XXX
+ SG_ gear_related : 13|2@0+ (1,0) [0|3] "" XXX
+ SG_ engine_on_maybe : 22|1@0+ (1,0) [0|3] "" XXX
+ SG_ steering_angle_high : 38|15@0+ (1,0) [0|255] "" XXX
+
+BO_ 224 buttons_shifter: 8 XXX
+ SG_ paddleshift_down_pressed : 16|1@1+ (1,0) [0|1] "" XXX
+ SG_ paddleshift_up_pressed : 18|1@1+ (1,0) [0|1] "" XXX
+ SG_ cruise_resume_pressed : 54|1@0+ (1,0) [0|1] "" XXX
+ SG_ cruise_set_pressed : 53|1@0+ (1,0) [0|1] "" XXX
+ SG_ cruise_minus_pressed : 50|1@1+ (1,0) [0|1] "" XXX
+ SG_ cruise_cancel_pressed : 49|1@1+ (1,0) [0|1] "" XXX
+ SG_ cruise_cancel_not : 41|1@1+ (1,0) [0|1] "" XXX
+ SG_ cruise_minus_not : 42|1@1+ (1,0) [0|1] "" XXX
+ SG_ cruise_set_not : 45|1@0+ (1,0) [0|1] "" XXX
+ SG_ cruise_resume_not : 46|1@0+ (1,0) [0|1] "" XXX
+ SG_ gear_shifter : 6|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 128 something_interesting_2: 8 XXX
+ SG_ interesting_3 : 10|11@0+ (1,0) [0|255] "" XXX
+ SG_ interesting_4 : 50|11@0+ (1,0) [0|63] "" XXX
+
+BO_ 160 something_interesting_3_gas: 8 XXX
+ SG_ interesting_5 : 18|11@0+ (1,0) [0|255] "" XXX
+ SG_ interesting_6 : 34|11@0+ (1,0) [0|2047] "" XXX
+ SG_ interesting_12 : 50|11@0+ (1,0) [0|255] "" XXX
+ SG_ GAS_PEDAL4_medium : 15|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 176 something_interesting_4: 8 XXX
+ SG_ interesting_7 : 26|11@0+ (1,0) [0|2047] "" XXX
+ SG_ interesting_8 : 10|11@0+ (1,0) [0|2047] "" XXX
+
+BO_ 192 steering_angle2_plus_int: 8 XXX
+ SG_ transmission_related : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ steer_rate_2 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ steering_angle_2 : 54|15@0- (1,0) [0|2047] "" XXX
+
+BO_ 709 something_interesting_5: 8 XXX
+ SG_ interesting_10 : 10|11@0+ (1,0) [0|2047] "" XXX
+ SG_ interesting_9 : 27|12@0+ (1,0) [0|255] "" XXX
+ SG_ interesting_11 : 42|11@0+ (1,0) [0|2047] "" XXX
+
+BO_ 560 something_1: 8 XXX
+ SG_ something_1 : 23|16@0+ (1,0) [0|2047] "" XXX
+
+BO_ 1128 something_2: 8 XXX
+ SG_ someting_2 : 49|14@0+ (1,0) [0|255] "" XXX
+
+BO_ 340 curious: 8 XXX
+ SG_ curious_1 : 8|8@1+ (1,0) [0|255] "" XXX
+ SG_ curious_2 : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ curious_3 : 40|8@1+ (1,0) [0|255] "" XXX
+ SG_ curious_4 : 56|8@1+ (1,0) [0|255] "" XXX
+ SG_ repeating : 0|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 824 hmmm_1: 8 XXX
+ SG_ hmmm_1 : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ hmmm_2 : 8|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1281 blinker_stuff: 8 XXX
+ SG_ NEW_SIGNAL_1 : 7|64@0+ (1,0) [0|18446744073709552000] "" XXX
+
+BO_ 1052 time_maybe: 8 XXX
+ SG_ time_maybe : 55|16@0+ (1,0) [0|255] "" XXX
+
+BO_ 272 speed_gees_110: 8 XXX
+ SG_ speedRIGHT_110 : 46|15@0+ (1,0) [0|255] "" XXX
+ SG_ WheelSpeedRL_110 : 29|14@0+ (1,0) [0|65535] "" XXX
+ SG_ gees_maybe : 9|10@0+ (1,0) [0|255] "" XXX
+
+BO_ 880 LIGHTS: 8 XXX
+ SG_ MARKER_LIGHTS_ON : 21|1@0+ (1,0) [0|3] "" XXX
+ SG_ HEADLIGHTS_ON : 30|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 1184 LIGHTS_2: 8 XXX
+ SG_ HIGH_BEAM_ON : 8|1@1+ (1,0) [0|7] "" XXX
+ SG_ HEADLIGHTS_ON : 10|1@1+ (1,0) [0|3] "" XXX
+ SG_ FRONT_FOG_ON : 12|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 1200 LIGHTS_STUFF: 8 XXX
+ SG_ SOME_LIGHT_ON : 7|1@0+ (1,0) [0|3] "" XXX
+ SG_ lights_on_car_on : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ HIGH_BEAM_ON : 12|1@0+ (1,0) [0|3] "" XXX
+ SG_ LIGHT_SWITCH : 23|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 1216 NEW_MSG_4: 8 XXX
+ SG_ car_off_maybe : 63|1@0+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_1 : 61|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 1224 CAR_OFF: 8 XXX
+ SG_ car_off_maybe : 48|1@1+ (1,0) [0|3] "" XXX
+
+BO_ 520 SEATBELT_PLUS: 8 XXX
+ SG_ DRIVER_SEATBELT_LATCHED : 35|1@1+ (1,0) [0|7] "" XXX
+ SG_ PASSENGER_SEATBELT_LATCHED : 53|1@0+ (1,0) [0|3] "" XXX
+ SG_ other_seatbelts : 7|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 816 CAR_ON: 8 XXX
+ SG_ CAR_ON1 : 36|1@0+ (1,0) [0|3] "" XXX
+ SG_ CAR_ON3 : 7|1@0+ (1,0) [0|3] "" XXX
+ SG_ CAR_ON2 : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 1168 BLINKER_STALK: 8 XXX
+ SG_ RIGHT_BLINKER_STALK : 40|1@1+ (1,0) [0|7] "" XXX
+ SG_ LEFT_BLINKER_STALK : 41|1@1+ (1,0) [0|3] "" XXX
+
+BO_ 736 BLINKER_LIGHTS: 8 XXX
+ SG_ right_blinker_light_2 : 3|1@1+ (1,0) [0|3] "" XXX
+ SG_ right_blinker_light_1 : 6|1@0+ (1,0) [0|3] "" XXX
+ SG_ left_blinker_light_1 : 5|1@0+ (1,0) [0|3] "" XXX
+ SG_ left_blinker_light_2 : 2|1@1+ (1,0) [0|7] "" XXX
+ SG_ blinker_toggle_1 : 7|1@0+ (1,0) [0|3] "" XXX
+ SG_ binker_toggle_2 : 4|1@0+ (1,0) [0|3] "" XXX
+
+BO_ 1029 random_stuff: 8 XXX
+
+BO_ 416 NEW_MSG_3: 8 XXX
+ SG_ after_brake : 24|8@1+ (1,0) [0|3] "" XXX
+
+BO_ 792 NEW_MSG_5: 8 XXX
+ SG_ rough_brake_pressure : 47|16@0+ (1,0) [0|255] "" XXX
+
+BO_ 96 safety_related_maybe: 8 XXX
+ SG_ NEW_SIGNAL_2 : 2|11@0+ (1,0) [0|255] "" XXX
+
+BO_ 400 NEW_MSG_10: 8 XXX
+ SG_ varying : 47|8@0+ (1,0) [0|31] "" XXX
+
+BO_ 1160 IPM2: 8 IPM
+ SG_ increasing : 56|4@1+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 48|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 672 NEW_MSG_12: 8 XXX
+ SG_ repeating : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ increasing : 60|5@0+ (1,0) [0|31] "" XXX
+
+BO_ 688 hmm_3: 8 XXX
+ SG_ increasing : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ up_and_down_sometimes : 0|4@1+ (1,0) [0|63] "" XXX
+
+BO_ 904 something_interesting_similar: 8 XXX
+ SG_ Similar_to_interesting_gas : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 1156 IPM1: 8 IPM
+
+BO_ 1176 IPM3: 8 IPM
+ SG_ LEFT_LANE : 60|2@0+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_2 : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ RIGHT_LANE : 56|2@1+ (1,0) [0|3] "" XXX
+ SG_ SPEED_LIMIT : 43|4@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 47|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 48|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 1196 IPM4: 8 IPM
+ SG_ NEW_SIGNAL_2 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 1056 NEW_MSG_1: 8 XXX
+ SG_ NEW_SIGNAL_1 : 10|1@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_2 : 40|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 512 NEW_MSG_6: 8 XXX
+ SG_ NEW_SIGNAL_1 : 48|2@1+ (1,0) [0|3] "" XXX
+
+
+
+
+CM_ SG_ 336 gees_maybe_2bus "-=right,+=left";
+CM_ SG_ 352 torque_converter_slip "200=100% slip, 100=no slip, <100, engine<xmission";
+CM_ SG_ 352 gear_requested "0=N,1=1,9=9,12=R";
+CM_ SG_ 352 gear_engaged "0=N,1=1,9=9,12=R,14=shifting";
+CM_ SG_ 632 engine_related "static_when_engine_stopped";
+CM_ SG_ 632 WheelSpeedLeft "moves with front";
+CM_ SG_ 208 brake_pressed_lightly "3= pressed, not confirmed";
+CM_ SG_ 689 DSC_on_off "01=on,10=off";
+CM_ SG_ 745 WheelSpeedRR "not front";
+CM_ SG_ 745 WheelSpeedRL "not front";
+CM_ SG_ 656 encoder_times_2 "counts up only";
+CM_ SG_ 656 slow_encoder_odometer "counts up only";
+CM_ SG_ 808 DOOR_CLOSED_FL "confirmed";
+CM_ SG_ 808 DOOR_CLOSED_FR "confirmed";
+CM_ SG_ 808 DOOR_CLOSED_RR "confirmed";
+CM_ SG_ 304 rpm_related "suspension maybe?";
+CM_ SG_ 592 BRAKE_PRESSED "confirmed";
+CM_ SG_ 922 engine_on_maybe "1 when on?";
+CM_ SG_ 224 paddleshift_down_pressed "confirmed";
+CM_ SG_ 224 paddleshift_up_pressed "confirmed";
+CM_ SG_ 224 cruise_resume_pressed "confirmed";
+CM_ SG_ 224 cruise_set_pressed "confirmed";
+CM_ SG_ 224 cruise_minus_pressed "confirmed";
+CM_ SG_ 224 cruise_cancel_pressed "confirmed";
+CM_ SG_ 224 cruise_cancel_not "confirmed";
+CM_ SG_ 224 cruise_minus_not "confirmed";
+CM_ SG_ 224 cruise_set_not "confirmed";
+CM_ SG_ 224 cruise_resume_not "confirmed";
+CM_ SG_ 224 gear_shifter "0=park,1=r,2=n,3=d,s=?";
+CM_ SG_ 1052 time_maybe "seen at 9500 to 10000 on 3-23";
+CM_ SG_ 1200 LIGHT_SWITCH "0=off,1=marker,2=headlight,3=auto";
+CM_ SG_ 816 CAR_ON2 "2a on stopped";
+CM_ SG_ 416 after_brake "not confirmed";
+CM_ SG_ 400 varying "seen at 124-106 on 4/9";
+CM_ SG_ 672 repeating "repeating";
+CM_ SG_ 1176 LEFT_LANE "1=detected,2=crossed, 3=not detected";
+CM_ SG_ 1176 RIGHT_LANE "1=detected,2=crossed,3=not detected";
+CM_ SG_ 1176 SPEED_LIMIT "0=unknown?,1=5?,3=10,5=20,7=30,9=40,12=55, signal*5-5=speedLimit";
+CM_ SG_ 1176 NEW_SIGNAL_3 "10=no passing, 2=unknown";
+CM_ SG_ 1176 NEW_SIGNAL_1 "1001=highway, 1010=stopped, 10=no passing, 9=passing allowed?";
